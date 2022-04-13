@@ -1,0 +1,54 @@
+/* Reset*/
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    
+}
+
+.cima {
+  background: red;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.cima::before {
+    content: "";
+    position: absolute;
+    width: 250PX;
+    height: 200PX;
+    background: white;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 40%);
+    border-radius: 50%;
+    outline: 20PX solid #202020;
+}
+
+.base {
+  position: relative;
+  background: rgb(247, 244, 244);
+  width: 40px;
+  height: 100;
+  margin-top: -2px;
+}

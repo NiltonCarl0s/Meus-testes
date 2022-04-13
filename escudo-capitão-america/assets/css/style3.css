@@ -1,0 +1,77 @@
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: blue;
+}
+
+.circle {
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid #000;
+    background: linear-gradient(to right, var(--color1), var(--color2), var(--color1) );
+    
+}
+
+#item1 {
+    margin: auto;
+    margin-top: 10rem;
+    height: 50rem;
+    width: 50rem;
+    --color1: red;
+    --color2: #910303;
+}
+
+#item2 {
+    height: 40rem;
+    width: 40rem;
+    --color1: rgb(190, 188, 188);
+    --color2: rgb(190, 188, 188);
+}
+
+#item3 {
+    height: 30rem;
+    width: 30rem;
+    --color1: red;
+    --color2: #910303;
+
+}
+
+#item4 {
+    height: 20rem;
+    width: 20rem;
+    --color1: blue;
+    --color2: #22264d;
+    transition: 2s;
+}
+
+#star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background: rgb(190, 188, 188);
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+#item4:hover {
+    transform: rotate(360deg);
+}
+
+H1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: BOLD;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}

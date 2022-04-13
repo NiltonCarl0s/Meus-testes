@@ -1,0 +1,94 @@
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: blue;
+}
+
+
+.circle {
+    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .1rem solid#3c404f;
+    background: linear-gradient(to right, var(--color1), var(--color2), var(--color1) );
+}
+
+
+
+#circle1 {
+    
+    margin: auto;
+    margin-top: 10rem;
+    width: 25.6rem;
+    height: 25.6rem;
+    --color1: red;
+    --color2: #910303;
+}
+
+
+#circle2 {
+    width: 20.6rem;
+    height: 20.6rem;
+    --color1: rgb(190, 188, 188);
+    --color2: rgb(190, 188, 188);
+}
+
+
+#circle3{
+    width: 15.6rem;
+    height: 15.6rem;
+    --color1: red;
+    --color2: #910303;
+}
+
+
+#circle4{
+    width: 10.6rem;
+    height: 10.6rem;
+    --color1: blue;
+    --color2: #02264d;
+    transition: 2s;
+}
+
+#star {
+    border-left: 5rem solid transparent;
+    border-right: 5rem solid transparent;
+    border-bottom: 3.5rem solid rgb(190, 188, 188);
+    transform: rotate(180deg);
+    cursor: pointer;
+    transition: 2s;
+}
+
+#star::before {
+    position: absolute;
+    border-left: 5rem solid transparent;
+    border-right: 5rem solid transparent;
+    border-bottom: 3.5rem solid rgb(190, 188, 188);
+    content: "";
+    transform: rotate(70deg);
+    left: -5rem;
+}
+
+#star::after {
+    position: absolute;
+    border-left: 5rem solid transparent;
+    border-right: 5rem solid transparent;
+    border-bottom: 3.5rem solid rgb(190, 188, 188);
+    content: "";
+    transform: rotate(-71.3deg);
+    left: -5rem;
+}
+
+#star:hover {
+    transform: rotate(360deg);
+}

@@ -1,0 +1,81 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #F9dc64;
+    --orange: #FF553E;
+    --purple: #85008e;
+    --blue: #3023AE;
+    --blue-alpha: #3023AE1f;   
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    
+}
+
+.container {
+    width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    width: 48rem;
+    height: 48rem;
+    background: chocolate;
+    border-radius: 35%;
+    background-image: radial-gradient(circle at bottom left, var(--yellow), var(--orange), var(--purple));
+}
+
+.container::before {
+    margin-left: auto;
+    margin-right: auto;
+    content: "";
+    position: absolute;
+    background-image: radial-gradient(circle at top left, var(--blue), var(--blue-alpha), transparent);
+    width: 48rem;
+    height: 48rem;
+    border-radius: 35%;
+}
+
+span {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 34rem;
+    height: 34rem;
+    border: 3rem solid #fff;
+    position: absolute;
+    top: 18%;
+    left: 16%;
+    border-radius: 35%;
+}
+
+span::before, span::after {
+    content: "";
+    position: absolute;
+}
+
+span::before {
+    width: 22rem;
+    height: 22rem;
+    border: 3rem solid white;
+    border-radius: 50%;
+    top: 2.8rem;
+    left: 2.8rem;
+}
+
+span::after {
+    width: 4.2rem;
+    height: 4.2rem;
+    background: #fff;
+    right: 1.5rem;
+    top:3rem;
+    border-radius: 50%;
+    
+}
